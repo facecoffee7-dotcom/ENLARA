@@ -1,0 +1,1 @@
+const form=document.querySelector('#form');const msg=document.querySelector('#msg');form.addEventListener('submit',e=>{e.preventDefault();localStorage.setItem('mashi_waitlist_email',form.querySelector('input').value);msg.textContent='¡Registro recibido! Esta versión guarda el correo localmente para pruebas.';msg.style.color='#8df0bf';form.reset()});
